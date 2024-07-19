@@ -30,7 +30,15 @@ for(let i=0; i<nombres.length; i++){
 // operador spread con arreglos:
 const nombres2 = ["trasportador", "regla 30 cm"]
 
-const productos = [ ...nombres, ...nombres2]
+let productos = [...nombres, ...nombres2]
+const elemento = "compas"
+productos = [...productos, elemento]
+
+const calculadora = "calculadora"
+productos = [... productos, calculadora]
+
 console.table(productos)
+
+
 
 
